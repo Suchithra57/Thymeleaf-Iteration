@@ -47,19 +47,4 @@ public class EmployeeController {
         return "array-demo";
 	}
 	
-	@GetMapping("/print")
-	public void print()
-	{
-		 List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-	        Iterator<Integer> iterator = list.iterator();
-
-	        while (iterator.hasNext()) {
-
-	            Integer result = iterator.next();
-	            System.out.println(result);
-
-	        }
-	        
-	}
-	
 }
