@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Arrays Demo</title>
+</head>
+
+<body>
+
+    <!-- Print the length of the array -->
+    <p>
+        Print the length of the array - <span th:text="${planets.length}"></span>
+    </p>
+
+    <!-- access the value of each element of the array continents by its index -->
+    <br/>
+    <p> each element of the array continents by its index</p>
+    <ol>
+        <li th:text="${planets[0]}"></li>
+        <li th:text="${planets[1]}"></li>
+        <li th:text="${planets[2]}"></li>
+        <li th:text="${planets[3]}"></li>
+        <li th:text="${planets[4]}"></li>
+        <li th:text="${planets[5]}"></li>
+        <li th:text="${planets[6]}"></li>
+    </ol>
+
+    <!-- iterate over the elements the array sequentially -->
+
+<br/>
+    <p> iterate over the elements the array sequentially</p>
+    <ul th:each="planet : ${planets}">
+        <li th:text="${planet}"></li>
+    </ul>
+
+</body>
+
+</html>
