@@ -23,8 +23,7 @@ public class EmployeeController {
         model.addAttribute("employees", employees);
         return "iteration";
     }
-	
-	
+		
 	@GetMapping("/arraysDemo")
     public String arraysDemo(Model model) {
         String[] planets = {
@@ -46,5 +45,5 @@ public class EmployeeController {
         model.addAttribute("planets", planets);
         return "array-demo";
 	}
-	
+
 }
